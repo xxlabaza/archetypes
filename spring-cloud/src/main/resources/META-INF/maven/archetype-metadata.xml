@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Copyright 2020 the original author or authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+                      name="my-archetype"
+                      partial="false">
+
+  <requiredProperties>
+    <requiredProperty key="groupId">
+      <defaultValue>com.xxlabaza.test</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="version">
+      <defaultValue>1.0.0</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="spring-boot">
+      <defaultValue>2.1.12.RELEASE</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="spring-cloud">
+      <defaultValue>Greenwich.SR5</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>LICENSE</include>
+        <include>README.md</include>
+        <include>CHANGELOG.md</include>
+        <include>CONTRIBUTING.md</include>
+      </includes>
+    </fileSet>
+    <!-- Note that the .gitignore is separated in a non-filtered fileSet -->
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.codestyle</include>
+        <include>.mvn</include>
+        <include>.gitignore</include>
+        <include>mvnw</include>
+        <include>mvnw.cmd</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>.codestyle</directory>
+      <excludes>
+        <exclude>license_for_check.txt</exclude>
+      </excludes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>.mvn</directory>
+    </fileSet>
+
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>.codestyle</directory>
+      <includes>
+        <include>license_for_check.txt</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+      <excludes>
+        <exclude>lombok.config</exclude>
+      </excludes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>lombok.config</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test/java</directory>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/docker</directory>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/test/resources</directory>
+    </fileSet>
+  </fileSets>
+
+</archetype-descriptor>
