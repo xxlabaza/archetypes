@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 set -e
 
@@ -15,8 +15,9 @@ fi
 
 find "${CURRENT_DIR}" -name "pom.xml" -mindepth 2 -maxdepth 2 | while read POM_PATH; do
   POM_DIRECTORY=`dirname "${POM_PATH}"`
+
   echo "Installing ${POM_DIRECTORY}"
-  ( cd "${POM_DIRECTORY}" ; ./mvnw clean install clean )
+  ( cd "${POM_DIRECTORY}" ; ./mvnw -B --quiet clean install clean )
 
   if [ -d "${POM_DIRECTORY}/scripts" ]; then
     cp ${POM_DIRECTORY}/scripts/*.sh "${SHELL_SCRIPTS_DIRECTORY}"
