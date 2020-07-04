@@ -7,7 +7,7 @@ TODO
 ${hash2} Build docker image
 
 ```bash
-$> ./mvnw clean package docker:build
+$> ./mvnw clean package dockerfile:build
 ```
 
 ${hash2} Package, verify and run
