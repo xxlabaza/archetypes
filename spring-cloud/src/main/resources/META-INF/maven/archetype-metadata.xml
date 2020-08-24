@@ -30,10 +30,10 @@ limitations under the License.
       <defaultValue>1.0.0</defaultValue>
     </requiredProperty>
     <requiredProperty key="spring-boot">
-      <defaultValue>2.3.1.RELEASE</defaultValue>
+      <defaultValue>2.3.3.RELEASE</defaultValue>
     </requiredProperty>
     <requiredProperty key="spring-cloud">
-      <defaultValue>Hoxton.SR6</defaultValue>
+      <defaultValue>Hoxton.SR7</defaultValue>
     </requiredProperty>
   </requiredProperties>
 
