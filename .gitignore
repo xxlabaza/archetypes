@@ -113,4 +113,5 @@ log*.txt*
 .DS_Store
 .vscode/
 settings.xml
-test/
+
+/test

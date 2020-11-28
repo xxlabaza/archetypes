@@ -1,3 +1,5 @@
+#set($specialImportsRegExp = "^" + $package.replaceAll("\.", "\\."))
+#set($customImportOrderRules = 'STATIC###STANDARD_JAVA_PACKAGE###THIRD_PARTY_PACKAGE###SPECIAL_IMPORTS')
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE module PUBLIC
           "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
@@ -171,8 +173,9 @@ limitations under the License.
       <property name="sortImportsInGroupAlphabetically" value="true"/>
       <property name="separateLineBetweenGroups" value="true"/>
       <property name="customImportOrderRules"
-                value="STATIC###STANDARD_JAVA_PACKAGE###SPECIAL_IMPORTS###THIRD_PARTY_PACKAGE"/>
-      <property name="specialImportsRegExp" value="^io\.appulse"/>
+                value="${customImportOrderRules}"/>
+      <property name="specialImportsRegExp"
+                value="${specialImportsRegExp}"/>
     </module>
     <module name="IllegalImport"/> <!-- defaults to sun.* packages -->
     <module name="RedundantImport"/>

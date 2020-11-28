@@ -30,11 +30,23 @@ limitations under the License.
       <defaultValue>1.0.0</defaultValue>
     </requiredProperty>
     <requiredProperty key="spring-boot">
-      <defaultValue>2.3.3.RELEASE</defaultValue>
+      <defaultValue>2.3.5.RELEASE</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="gitignore">
+      <defaultValue>.gitignore</defaultValue>
     </requiredProperty>
   </requiredProperties>
 
   <fileSets>
+    <!-- a hack for the .gitignore file
+         https://stackoverflow.com/a/49052349 -->
+    <fileSet>
+      <directory></directory>
+      <includes>
+        <include>__gitignore__</include>
+      </includes>
+    </fileSet>
+
     <fileSet filtered="true" encoding="UTF-8">
       <directory></directory>
       <includes>
@@ -44,13 +56,11 @@ limitations under the License.
         <include>CONTRIBUTING.md</include>
       </includes>
     </fileSet>
-    <!-- Note that the files are separated in a non-filtered fileSet -->
     <fileSet encoding="UTF-8">
       <directory></directory>
       <includes>
         <include>.codestyle</include>
         <include>.mvn</include>
-        <include>.gitignore</include>
         <include>mvnw</include>
         <include>mvnw.cmd</include>
       </includes>
@@ -59,6 +69,7 @@ limitations under the License.
       <directory>.codestyle</directory>
       <excludes>
         <exclude>license_for_check.txt</exclude>
+        <exclude>checkstyle.xml</exclude>
       </excludes>
     </fileSet>
     <fileSet encoding="UTF-8">
@@ -69,6 +80,7 @@ limitations under the License.
       <directory>.codestyle</directory>
       <includes>
         <include>license_for_check.txt</include>
+        <include>checkstyle.xml</include>
       </includes>
     </fileSet>
 
