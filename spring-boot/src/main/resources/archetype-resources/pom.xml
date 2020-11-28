@@ -42,6 +42,8 @@ limitations under the License.
     <maven.compiler.testSource>${java.version}</maven.compiler.testSource>
 
     <skipAllTests>false</skipAllTests>
+    <skipUnitTests>${skipAllTests}</skipUnitTests>
+    <skipIntegrationTests>${skipAllTests}</skipIntegrationTests>
   </properties>
 
   <licenses>
@@ -304,7 +306,7 @@ limitations under the License.
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.2</version>
         <configuration>
-          <skipTests>${skipAllTests}</skipTests>
+          <skipITs>${dollar}{skipUnitTests}</skipITs>
           <trimStackTrace>false</trimStackTrace>
           <includes>
             <include>**/*Test.java</include>
@@ -326,7 +328,7 @@ limitations under the License.
         <artifactId>maven-failsafe-plugin</artifactId>
         <version>2.22.2</version>
         <configuration>
-          <skipITs>${skipAllTests}</skipITs>
+          <skipITs>${dollar}{skipIntegrationTests}</skipITs>
           <trimStackTrace>false</trimStackTrace>
           <includes>
             <include>**/*IntegrationTest.java</include>
