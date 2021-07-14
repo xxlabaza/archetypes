@@ -77,7 +77,7 @@ limitations under the License.
     <!-- Checks for Javadoc comments.                     -->
     <!-- See http://checkstyle.sf.net/config_javadoc.html -->
     <module name="JavadocMethod">
-      <property name="scope" value="protected"/>
+      <property name="accessModifiers" value="protected"/>
       <property name="allowedAnnotations" value="Override, Test"/>
     </module>
     <module name="JavadocType">
