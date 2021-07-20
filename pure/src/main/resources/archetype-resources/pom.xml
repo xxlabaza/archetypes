@@ -331,6 +331,12 @@ limitations under the License.
             <include>**/it/**/*Tests.java</include>
             <include>**/it/**/Test*.java</include>
           </includes>
+          <classpathDependencyExcludes>
+            <classpathDependencyExcludes>${groupId}:${artifactId}</classpathDependencyExcludes>
+          </classpathDependencyExcludes>
+          <additionalClasspathElements>
+            <additionalClasspathElement>${project.build.outputDirectory}</additionalClasspathElement>
+          </additionalClasspathElements>
         </configuration>
         <executions>
           <execution>
