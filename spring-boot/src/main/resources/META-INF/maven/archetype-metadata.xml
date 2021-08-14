@@ -30,7 +30,7 @@ limitations under the License.
       <defaultValue>1.0.0</defaultValue>
     </requiredProperty>
     <requiredProperty key="spring-boot">
-      <defaultValue>2.5.2</defaultValue>
+      <defaultValue>2.5.3</defaultValue>
     </requiredProperty>
     <requiredProperty key="gitignore">
       <defaultValue>.gitignore</defaultValue>
