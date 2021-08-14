@@ -407,6 +407,15 @@ limitations under the License.
             <version>8.44</version>
           </dependency>
         </dependencies>
+        <configuration>
+          <configLocation>${dollar}{project.basedir}/.codestyle/checkstyle.xml</configLocation>
+          <consoleOutput>true</consoleOutput>
+          <failsOnError>true</failsOnError>
+          <failOnViolation>true</failOnViolation>
+          <linkXRef>false</linkXRef>
+          <propertyExpansion>codestyleFolder=${dollar}{project.basedir}/.codestyle</propertyExpansion>
+          <includeTestSourceDirectory>true</includeTestSourceDirectory>
+        </configuration>
         <executions>
           <execution>
             <id>checkstyle-validation</id>
@@ -414,15 +423,6 @@ limitations under the License.
             <goals>
               <goal>check</goal>
             </goals>
-            <configuration>
-              <configLocation>${dollar}{project.basedir}/.codestyle/checkstyle.xml</configLocation>
-              <consoleOutput>true</consoleOutput>
-              <failsOnError>true</failsOnError>
-              <failOnViolation>true</failOnViolation>
-              <linkXRef>false</linkXRef>
-              <propertyExpansion>codestyleFolder=${dollar}{project.basedir}/.codestyle</propertyExpansion>
-              <includeTestSourceDirectory>true</includeTestSourceDirectory>
-            </configuration>
           </execution>
         </executions>
       </plugin>
