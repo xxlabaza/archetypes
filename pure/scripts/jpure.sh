@@ -103,7 +103,7 @@ mvn archetype:generate \
     -DarchetypeGroupId=com.xxlabaza.archetypes \
     -DarchetypeArtifactId=pure \
     -DarchetypeVersion=1.0.0 \
-    -DgroupdId=${GROUP_ID} \
+    -DgroupId=${GROUP_ID} \
     -DartifactId=${ARTIFACT_ID} \
     -Dversion=${VERSION} \
     -Dpackage=${PACKAGE}
