@@ -64,6 +64,11 @@ limitations under the License.
     <!-- remove it -->
     <exclude name="NcssCount" />
   </rule>
+  <rule ref="category/java/design.xml/UseUtilityClass">
+    <properties>
+      <property name="violationSuppressXPath" value="//ClassOrInterfaceDeclaration/preceding-sibling::Annotation/MarkerAnnotation/Name[@Image='SpringBootApplication']" />
+    </properties>
+  </rule>
   <rule ref="category/java/documentation.xml">
     <exclude name="CommentSize" />
 
