@@ -115,6 +115,7 @@ mvn archetype:generate \
     "${BATCH_MODE}" \
     -DarchetypeGroupId=com.xxlabaza.archetypes \
     -DarchetypeArtifactId=spring-cloud \
+    -DarchetypeCatalog=internal \
     -DarchetypeVersion=1.0.0 \
     -DgroupId=${GROUP_ID} \
     -DartifactId=${ARTIFACT_ID} \
