@@ -186,7 +186,7 @@ limitations under the License.
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
-      <version>1.18.0</version>
+      <version>1.18.3</version>
       <scope>test</scope>
     </dependency>
 
@@ -238,7 +238,7 @@ limitations under the License.
       <plugin>
         <groupId>io.github.git-commit-id</groupId>
         <artifactId>git-commit-id-maven-plugin</artifactId>
-        <version>5.0.0</version>
+        <version>6.0.0</version>
         <executions>
           <execution>
             <id>git-infos</id>
@@ -323,7 +323,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.1.2</version>
         <configuration>
           <skipTests>${dollar}{skipUnitTests}</skipTests>
           <trimStackTrace>false</trimStackTrace>
@@ -345,7 +345,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.1.2</version>
         <configuration>
           <skipITs>${dollar}{skipIntegrationTests}</skipITs>
           <trimStackTrace>false</trimStackTrace>
@@ -379,12 +379,12 @@ limitations under the License.
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.7.3.4</version>
+        <version>4.7.3.5</version>
         <configuration>
           <effort>Max</effort>
           <threshold>Low</threshold>
           <xmlOutput>false</xmlOutput>
-          <excludeFilterFile>${project.basedir}/.codestyle/findbugs.xml</excludeFilterFile>
+          <excludeFilterFile>${dollar}{project.basedir}/.codestyle/findbugs.xml</excludeFilterFile>
         </configuration>
         <executions>
           <execution>
@@ -400,7 +400,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.20.0</version>
+        <version>3.21.0</version>
         <configuration>
           <sourceEncoding>${dollar}{project.build.sourceEncoding}</sourceEncoding>
           <targetJdk>${dollar}{maven.compiler.source}</targetJdk>
@@ -438,12 +438,12 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.3.0</version>
         <dependencies>
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>10.10.0</version>
+            <version>10.12.0</version>
           </dependency>
         </dependencies>
         <configuration>
