@@ -76,26 +76,26 @@ limitations under the License.
     <!-- <dependency>
       <groupId>info.picocli</groupId>
       <artifactId>picocli</artifactId>
-      <version>4.7.4</version>
+      <version>4.7.5</version>
     </dependency> -->
 
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.28</version>
+      <version>1.18.30</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.9.3</version>
+      <version>5.10.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
-      <version>5.9.3</version>
+      <version>5.10.0</version>
       <scope>test</scope>
     </dependency>
 
@@ -109,20 +109,20 @@ limitations under the License.
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>5.4.0</version>
+      <version>5.6.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-junit-jupiter</artifactId>
-      <version>5.4.0</version>
+      <version>5.6.0</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
-      <version>1.18.3</version>
+      <version>1.19.1</version>
       <scope>test</scope>
     </dependency>
 
@@ -188,7 +188,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.1</version>
         <executions>
           <execution>
             <goals>
@@ -263,7 +263,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.6.0</version>
         <configuration>
           <additionalOptions>-Xdoclint:none</additionalOptions>
           <additionalparam>-Xdoclint:none</additionalparam>
@@ -346,7 +346,7 @@ limitations under the License.
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.7.3.5</version>
+        <version>4.7.3.6</version>
         <configuration>
           <effort>Max</effort>
           <threshold>Low</threshold>
@@ -410,7 +410,7 @@ limitations under the License.
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>10.12.0</version>
+            <version>10.12.4</version>
           </dependency>
         </dependencies>
         <configuration>
@@ -436,7 +436,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.4.1</version>
         <executions>
           <execution>
             <id>enforce-versions</id>

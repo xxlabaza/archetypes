@@ -158,7 +158,7 @@ limitations under the License.
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
-      <version>1.18.3</version>
+      <version>1.19.1</version>
       <scope>test</scope>
     </dependency>
 
@@ -268,7 +268,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.6.0</version>
         <configuration>
           <additionalOptions>-Xdoclint:none</additionalOptions>
           <additionalparam>-Xdoclint:none</additionalparam>
@@ -351,7 +351,7 @@ limitations under the License.
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.7.3.5</version>
+        <version>4.7.3.6</version>
         <configuration>
           <effort>Max</effort>
           <threshold>Low</threshold>
@@ -415,7 +415,7 @@ limitations under the License.
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>10.12.0</version>
+            <version>10.12.4</version>
           </dependency>
         </dependencies>
         <configuration>
@@ -441,7 +441,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.4.1</version>
         <executions>
           <execution>
             <id>enforce-versions</id>
