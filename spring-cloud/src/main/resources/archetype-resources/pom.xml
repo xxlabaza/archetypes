@@ -185,15 +185,14 @@ limitations under the License.
 
     <dependency>
       <groupId>org.testcontainers</groupId>
-      <artifactId>testcontainers</artifactId>
-      <version>1.19.1</version>
+      <artifactId>junit-jupiter</artifactId>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
-      <version>4.8.0</version>
+      <version>4.8.3</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -203,7 +202,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.11.0</version>
+        <version>3.12.1</version>
         <configuration>
           <release>${dollar}{java.version}</release>
         </configuration>
@@ -238,7 +237,7 @@ limitations under the License.
       <plugin>
         <groupId>io.github.git-commit-id</groupId>
         <artifactId>git-commit-id-maven-plugin</artifactId>
-        <version>6.0.0</version>
+        <version>8.0.1</version>
         <executions>
           <execution>
             <id>git-infos</id>
@@ -296,7 +295,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.6.0</version>
+        <version>3.6.3</version>
         <configuration>
           <additionalOptions>-Xdoclint:none</additionalOptions>
           <additionalparam>-Xdoclint:none</additionalparam>
@@ -323,7 +322,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>3.2.5</version>
         <configuration>
           <skipTests>${dollar}{skipUnitTests}</skipTests>
           <trimStackTrace>false</trimStackTrace>
@@ -345,7 +344,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>3.2.5</version>
         <configuration>
           <skipITs>${dollar}{skipIntegrationTests}</skipITs>
           <trimStackTrace>false</trimStackTrace>
@@ -379,7 +378,7 @@ limitations under the License.
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.7.3.6</version>
+        <version>4.8.3.1</version>
         <configuration>
           <effort>Max</effort>
           <threshold>Low</threshold>
@@ -400,7 +399,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.21.0</version>
+        <version>3.21.2</version>
         <configuration>
           <sourceEncoding>${dollar}{project.build.sourceEncoding}</sourceEncoding>
           <targetJdk>${dollar}{maven.compiler.source}</targetJdk>
@@ -438,12 +437,12 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.3.1</version>
         <dependencies>
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>10.12.4</version>
+            <version>10.14.2</version>
           </dependency>
         </dependencies>
         <configuration>
@@ -479,7 +478,7 @@ limitations under the License.
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>3.8.7</version>
+                  <version>3.9.6</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
                   <version>11</version>
