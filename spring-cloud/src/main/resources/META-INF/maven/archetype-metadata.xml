@@ -30,10 +30,10 @@ limitations under the License.
       <defaultValue>1.0.0</defaultValue>
     </requiredProperty>
     <requiredProperty key="spring-boot">
-      <defaultValue>3.2.3</defaultValue>
+      <defaultValue>3.3.0</defaultValue>
     </requiredProperty>
     <requiredProperty key="spring-cloud">
-      <defaultValue>2023.0.0</defaultValue>
+      <defaultValue>2023.0.1</defaultValue>
     </requiredProperty>
     <requiredProperty key="gitignore">
       <defaultValue>.gitignore</defaultValue>

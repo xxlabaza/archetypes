@@ -164,7 +164,7 @@ limitations under the License.
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
-      <version>4.8.3</version>
+      <version>4.8.5</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -174,7 +174,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.12.1</version>
+        <version>3.13.0</version>
         <configuration>
           <release>${dollar}{java.version}</release>
         </configuration>
@@ -209,7 +209,7 @@ limitations under the License.
       <plugin>
         <groupId>io.github.git-commit-id</groupId>
         <artifactId>git-commit-id-maven-plugin</artifactId>
-        <version>8.0.1</version>
+        <version>8.0.2</version>
         <executions>
           <execution>
             <id>git-infos</id>
@@ -350,7 +350,7 @@ limitations under the License.
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.8.3.1</version>
+        <version>4.8.5.0</version>
         <configuration>
           <effort>Max</effort>
           <threshold>Low</threshold>
@@ -371,7 +371,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.21.2</version>
+        <version>3.22.0</version>
         <configuration>
           <sourceEncoding>${dollar}{project.build.sourceEncoding}</sourceEncoding>
           <targetJdk>${dollar}{maven.compiler.source}</targetJdk>
@@ -396,12 +396,12 @@ limitations under the License.
           <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-core</artifactId>
-            <version>6.55.0</version>
+            <version>7.1.0</version>
           </dependency>
           <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-java</artifactId>
-            <version>6.55.0</version>
+            <version>7.1.0</version>
           </dependency>
         </dependencies>
       </plugin>
@@ -414,7 +414,7 @@ limitations under the License.
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>10.14.2</version>
+            <version>10.17.0</version>
           </dependency>
         </dependencies>
         <configuration>
