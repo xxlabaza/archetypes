@@ -295,7 +295,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.10.0</version>
         <configuration>
           <additionalOptions>-Xdoclint:none</additionalOptions>
           <additionalparam>-Xdoclint:none</additionalparam>
@@ -322,7 +322,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.5.0</version>
         <configuration>
           <skipTests>${dollar}{skipUnitTests}</skipTests>
           <trimStackTrace>false</trimStackTrace>
@@ -344,7 +344,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.5.0</version>
         <configuration>
           <skipITs>${dollar}{skipIntegrationTests}</skipITs>
           <trimStackTrace>false</trimStackTrace>
@@ -378,7 +378,7 @@ limitations under the License.
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.8.6.2</version>
+        <version>4.8.6.3</version>
         <configuration>
           <effort>Max</effort>
           <threshold>Low</threshold>
@@ -399,7 +399,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.23.0</version>
+        <version>3.25.0</version>
         <configuration>
           <sourceEncoding>${dollar}{project.build.sourceEncoding}</sourceEncoding>
           <targetJdk>${dollar}{maven.compiler.source}</targetJdk>
@@ -424,12 +424,12 @@ limitations under the License.
           <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-core</artifactId>
-            <version>7.3.0</version>
+            <version>7.5.0</version>
           </dependency>
           <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-java</artifactId>
-            <version>7.3.0</version>
+            <version>7.5.0</version>
           </dependency>
         </dependencies>
       </plugin>
@@ -437,12 +437,12 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.4.0</version>
+        <version>3.5.0</version>
         <dependencies>
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>10.17.0</version>
+            <version>10.18.1</version>
           </dependency>
         </dependencies>
         <configuration>
@@ -478,10 +478,10 @@ limitations under the License.
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>3.9.6</version>
+                  <version>3.9.9</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>11</version>
+                  <version>17</version>
                 </requireJavaVersion>
               </rules>
             </configuration>
